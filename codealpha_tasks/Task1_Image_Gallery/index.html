@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <h1>Scenic Horizons</h1>
+
+<div class="categories">
+
+    <div class="category" onclick="filterImages('all')">
+        <img src="images/all-cover.jpg" alt="All">
+        <h3>All</h3>
+    </div>
+
+    <div class="category" onclick="filterImages('nature')">
+        <img src="images/nature1.jpg" alt="Nature">
+        <h3>Nature</h3>
+    </div>
+
+    <div class="category" onclick="filterImages('city')">
+        <img src="images/city1.jpg" alt="City">
+        <h3>City</h3>
+    </div>
+
+    <div class="category" onclick="filterImages('village')">
+        <img src="images/village1.jpg" alt="Village">
+        <h3>Village</h3>
+    </div>
+
+</div>
+
+<button id="backBtn" onclick="showCategories()">
+    Back
+</button>
+
+<div class="gallery">
+
+    <!-- Nature Images -->
+    <img src="images/nature1.jpg" class="nature" alt="Nature 1">
+    <img src="images/nature2.jpg" class="nature" alt="Nature 2">
+    <img src="images/nature3.jpg" class="nature" alt="Nature 3">
+    <img src="images/nature4.jpg" class="nature" alt="Nature 4">
+    <img src="images/nature5.jpg" class="nature" alt="Nature 5">
+    <img src="images/nature6.jpg" class="nature" alt="Nature 6">
+    <img src="images/nature7.jpg" class="nature" alt="Nature 7">
+    <img src="images/nature8.jpg" class="nature" alt="Nature 8">
+    <img src="images/nature9.jpg" class="nature" alt="Nature 9">
+    <img src="images/nature10.jpg" class="nature" alt="Nature 10">
+
+    <!-- City Images -->
+    <img src="images/city1.jpg" class="city" alt="City 1">
+    <img src="images/city2.jpg" class="city" alt="City 2">
+    <img src="images/city3.jpg" class="city" alt="City 3">
+    <img src="images/city4.jpg" class="city" alt="City 4">
+    <img src="images/city5.jpg" class="city" alt="City 5">
+    <img src="images/city6.jpg" class="city" alt="City 6">
+    <img src="images/city7.jpg" class="city" alt="City 7">
+    <img src="images/city8.jpg" class="city" alt="City 8">
+    <img src="images/city9.jpg" class="city" alt="City 9">
+    <img src="images/city10.jpg" class="city" alt="City 10">
+
+    <!-- Village Images -->
+    <img src="images/village1.jpg" class="village" alt="Village 1">
+    <img src="images/village2.jpg" class="village" alt="Village 2">
+    <img src="images/village3.jpg" class="village" alt="Village 3">
+    <img src="images/village4.jpg" class="village" alt="Village 4">
+    <img src="images/village5.jpg" class="village" alt="Village 5">
+    <img src="images/village6.jpg" class="village" alt="Village 6">
+    <img src="images/village7.jpg" class="village" alt="Village 7">
+    <img src="images/village8.jpg" class="village" alt="Village 8">
+    <img src="images/village9.jpg" class="village" alt="Village 9">
+    <img src="images/village10.jpg" class="village" alt="Village 10">
+
+</div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+
+        <button id="prev">❮</button>
+
+        <img id="lightbox-img" src="" alt="Large Image">
+
+        <button id="next">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
